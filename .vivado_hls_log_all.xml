@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="@E Simulation failed.&#xD;&#xA;" projectName="Hough" solutionName="solution4" date="2020-11-28T16:41:33.995+0530"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'houghTransform' (Loop: loop_accum_theta): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('acc_100_addr_1_write_ln64', Hough/houghTransform.cpp:64) of variable 'accMax', Hough/houghTransform.cpp:64 on array 'acc_100' and 'load' operation ('acc_100_load_1', Hough/houghTransform.cpp:64) on array 'acc_100'." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:31.679+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'houghTransform' (Loop: loop_accum_theta): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('acc_100_addr_1_write_ln64', Hough/houghTransform.cpp:64) of variable 'accMax', Hough/houghTransform.cpp:64 on array 'acc_100' and 'load' operation ('acc_100_load_1', Hough/houghTransform.cpp:64) on array 'acc_100'." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:30.862+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'houghTransform' (Loop: loop_accum_theta): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('acc_100_addr_1_write_ln64', Hough/houghTransform.cpp:64) of variable 'accMax', Hough/houghTransform.cpp:64 on array 'acc_100' and 'load' operation ('acc_100_load_1', Hough/houghTransform.cpp:64) on array 'acc_100'." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:30.843+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'houghTransform' (Loop: loop_accum_theta): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('acc_100_addr_1_write_ln64', Hough/houghTransform.cpp:64) of variable 'accMax', Hough/houghTransform.cpp:64 on array 'acc_100' and 'load' operation ('acc_100_load_1', Hough/houghTransform.cpp:64) on array 'acc_100'." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:30.826+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'houghTransform/out' to 'houghTransform/out_r' to avoid the conflict with HDL keywords or other object names." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:29.394+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'houghTransform/in' to 'houghTransform/in_r' to avoid the conflict with HDL keywords or other object names." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:29.380+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-3' (Hough/houghTransform.cpp:103:19) in function 'houghTransform' : &#xD;&#xA;&#xD;&#xA;more than one sub loop." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:28.710+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (Hough/houghTransform.cpp:88:20) in function 'houghTransform' : &#xD;&#xA;&#xD;&#xA;more than one sub loop." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:22.299+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'loop_accum_r' (Hough/houghTransform.cpp:53:52) in function 'houghTransform' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:22.271+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'out': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:20.659+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'in': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:19.866+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'cotval.V'  accessed through non-constant indices on dimension 1 (Hough/houghTransform.cpp:117:35), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:18.735+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'acc' (Hough/houghTransform.cpp:15) accessed through non-constant indices on dimension 2 (Hough/houghTransform.cpp:93:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="Hough" solutionName="solution3" date="2020-11-22T21:08:18.684+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
